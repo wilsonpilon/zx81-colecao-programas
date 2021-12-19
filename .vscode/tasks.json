@@ -1,0 +1,26 @@
+{
+    "version": "1.0.6",
+    "tasks": [
+        {
+            "label": "make",
+            "type": "shell",
+            "command": "${workspaceFolder}/zxtext2p.exe",
+            "args": [
+                "-o","main.p",
+                "main.bas",""
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
