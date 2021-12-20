@@ -4,7 +4,7 @@
 # ganha quem tirar o ultimo palito
 # caracter grafico linha 1040 = chr$(133) = "\ :"
 
-1 rem c-micromega
+1 rem c-micromega 1983
 1000 slow
 1010 let a=17
 1020 cls
