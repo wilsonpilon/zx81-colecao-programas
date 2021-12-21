@@ -44,12 +44,34 @@
             }
         },
         {
-            "label": "ZX81 emulator Current File",
+            "label": "sz81 emulator Current File",
             "type": "shell",
-            "command": "e:/system/zeddy/sz81",
+            "command": "sz81",
             "args": [
                 "${file}.p","",
                 "",""
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": false
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "zesarux emulator Current File",
+            "type": "shell",
+            "command": "zesarux",
+            "args": [
+                "--machine","ZX81",
+                "--tape", "${file}.p",
+                "--outtape", "${file}-outtape.p"
             ],
             "presentation": {
                 "echo": true,
