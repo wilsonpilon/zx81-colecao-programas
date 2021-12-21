@@ -46,7 +46,7 @@
         {
             "label": "ZX81 emulator Current File",
             "type": "shell",
-            "command": "sz81",
+            "command": "e:/system/zeddy/sz81",
             "args": [
                 "${file}.p","",
                 "",""

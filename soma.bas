@@ -24,6 +24,34 @@
 140 let t$(i)=chr$(code t$(i)+code"\::")
 150 next i
 160 let t$=t$+"=%?"
-170 for i=code chr$(8) to code chr$(12)
+170 for i=code "\@@" to code chr$(12)
 180 print at i,code "=";a(i-code "\:'")
 190 next i
+200 let c=code "\~~"
+210 let b=c
+220 for i=pi/pi to code "="-len t$
+230 print at b,i-y;"        "
+240 let b=c
+250 print at c,i;t$
+260 let c=c+(inkey$="6")-(inkey$="7")
+270 if c>code chr$(12) then let c=code chr$(12)
+280 if c<code "\@@" then let c=code "\@@"
+290 for j=y to code "H"
+300 next j
+310 next i
+320 for i=y to code "\: "
+330 if c=i+code "\:'" and a(i)=d then goto 370
+340 next i
+350 print at c,code "=";"*** errado"
+360 goto 380
+370 print at c,code "/";"certo"
+380 print at 21,0;"deseja jogar novamente? (s/n)"
+390 if inkey$="s" then run
+400 if inkey$="n" then goto 420
+410 goto 390
+420 cls
+430 print at 11,11;"%f%i%m"
+440 stop
+450 save "soma"
+460 stop
+
