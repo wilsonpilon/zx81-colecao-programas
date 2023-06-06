@@ -1,0 +1,8 @@
+
+#AUTOSTART=1
+
+100 print "demo0"
+110 for x=1 to 3
+120 print x
+130 next x
+140 goto 100

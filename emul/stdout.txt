@@ -1,0 +1,2 @@
+Reading from ./emul/data/sz81rc.txt
+Writing to ./emul/data/sz81rc.txt

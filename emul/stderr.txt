@@ -1,0 +1,4 @@
+ROM : ./emul/data/zx81.rom
+Application Path (LOAD): ./emul/data/sz81rc.txt
+Cannot read from ./emul/data/sz81rc.txt
+Bitmap format = 0
